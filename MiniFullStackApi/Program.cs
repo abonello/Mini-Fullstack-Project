@@ -39,8 +39,8 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 
-/*
 
+/*
 // Seed customers and demonstrate CRUD operations
 using (var scope = app.Services.CreateScope())
 {
@@ -140,12 +140,12 @@ using (var scope = app.Services.CreateScope())
                 // new Order { Product = "Widget A", Amount = 19.99, CustomerId = alice.Id },
                 // new Order { Product = "Widget B", Amount = 29.99, CustomerId = alice.Id },
                 // new Order { Product = "Widget C", Amount = 39.99, CustomerId = bob.Id },
-                new Order { CustomerId = alice.Id, Product = "Laptop", Amount = 1200.00, Status = "Pending" },
-                new Order { CustomerId = alice.Id, Product = "Mouse", Amount = 25.50, Status = "Pending" },
-                new Order { CustomerId = bob.Id, Product = "Tablet", Amount = 450.00, Status = "Pending" },
-                new Order { CustomerId = bob.Id, Product = "Keyboard", Amount = 75.00, Status = "Pending" },
-                new Order { CustomerId = charlie.Id, Product = "Monitor", Amount = 300.00, Status = "Pending" },
-                new Order { CustomerId = charlie.Id, Product = "Headphones", Amount = 85.00, Status = "Pending" }
+                new Order { CustomerId = alice.Id, Product = "Laptop", Amount = 1200.00M, Status = "Pending" },
+                new Order { CustomerId = alice.Id, Product = "Mouse", Amount = 25.50M, Status = "Pending" },
+                new Order { CustomerId = bob.Id, Product = "Tablet", Amount = 450.00M, Status = "Pending" },
+                new Order { CustomerId = bob.Id, Product = "Keyboard", Amount = 75.00M, Status = "Pending" },
+                new Order { CustomerId = charlie.Id, Product = "Monitor", Amount = 300.00M, Status = "Pending" },
+                new Order { CustomerId = charlie.Id, Product = "Headphones", Amount = 85.00M, Status = "Pending" }
             );
             db.SaveChanges();
 
