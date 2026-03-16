@@ -39,3 +39,5 @@ GO
 SELECT * FROM Customers;
 SELECT * FROM Orders;
 ```
+
+After setting up the database, you can uncomment the Seeding sections in program.cs and execute dotnet run, to get some initial data to play with.
