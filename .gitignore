@@ -1,0 +1,14 @@
+# .NET
+**/bin/
+**/obj/
+*.user
+
+# Visual Studio
+.vs/
+
+# Node / React
+**/node_modules/
+**/dist/
+
+# Environment
+*.env
